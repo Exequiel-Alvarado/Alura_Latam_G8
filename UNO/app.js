@@ -1,2 +1,2 @@
 alert('Hola Mundo');
-prompt("Me indicas un numero por favor")
+prompt("Me indicas un numero por favor");
