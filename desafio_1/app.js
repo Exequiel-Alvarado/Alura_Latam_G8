@@ -3,4 +3,4 @@ let nombre = "Lua";
 let edad = 25;
 let numeroDeVentas = 50;
 let saldoDisponible = 1000;
-
+alert('¡Error! Completa todos los campos');
