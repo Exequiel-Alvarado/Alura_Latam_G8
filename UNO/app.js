@@ -1,4 +1,4 @@
-let numeroSecreto = 6;
+let numeroSecreto = 3;
 let numeroUsuario = prompt("Me indicas un numero  entre 1 y 10 por favor");
 
 //alert('Hola Mundo');
