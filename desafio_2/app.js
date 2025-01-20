@@ -47,7 +47,15 @@ if(puntaje >= 100){
 utilizando un template string para incluir el valor del saldo.
 -------------------------------------------------------
 
-*/
-
 let saldo=prompt('ingrese su saldo');
 alert('si saldo es:'+' $'+saldo);
+*/
+
+/*
+5.Pide al usuario que ingrese su nombre mediante un prompt.
+ Luego, muestra una alerta de bienvenida usando ese nombre.
+ --------------------------------------------------------
+
+*/
+let usuario=prompt('ingresa tu nombre');
+alert('bienvenido'+' '+usuario);
