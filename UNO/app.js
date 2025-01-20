@@ -9,7 +9,7 @@ if (numeroUsuario == numeroSecreto ){
     alert (`acertaste el numero de usuario es : ${numeroUsuario}`);
 } else{
     alert('lo siento, no acertaste')
-}
+};
 
 
 
