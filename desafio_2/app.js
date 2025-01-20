@@ -33,7 +33,6 @@ if(numero>=0){
 Si la puntuación es mayor o igual a 100, muestra "¡Felicidades, has ganado!".
  En caso contrario, muestra "Intentalo nuevamente para ganar.".
  ------------------------------------------------------
-*/
 
 let puntaje=prompt('ingresa tu puntuacion');
 if(puntaje >= 100){
@@ -41,3 +40,14 @@ if(puntaje >= 100){
 }else{
     alert('Intentalo nuevamente para ganar.');
 };
+*/
+
+/*
+4.Crea un mensaje que informe al usuario sobre el saldo de su cuenta, 
+utilizando un template string para incluir el valor del saldo.
+-------------------------------------------------------
+
+*/
+
+let saldo=prompt('ingrese su saldo');
+alert('si saldo es:'+' $'+saldo);
