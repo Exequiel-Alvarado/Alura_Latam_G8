@@ -10,3 +10,7 @@ let nombre = prompt("Cual es tu nombre") ;
 console.log(nombre);
 let edad = prompt('ingresa tu edad ');
 console.log(edad);
+
+if (edad=18){
+    alert('¡Puedes obtener tu licencia de conducir!');
+}
