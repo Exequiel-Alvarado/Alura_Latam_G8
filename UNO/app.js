@@ -2,6 +2,7 @@ let numeroSecreto =5;
 let numeroUsuario =0;
 let intento=1;
 let palabraVeces = 'vez';
+let maximoIntentos =3;
 while (numeroUsuario != numeroSecreto){
     numeroUsuario = prompt("Me indicas un numero  entre 1 y 10 por favor");
 
@@ -21,6 +22,13 @@ while (numeroUsuario != numeroSecreto){
         //alert('lo siento, no acertaste')
         intento = intento + 1;
         palabraVeces = 'veces';
+        if (intentos > maximoIntentos){
+            alert('llegaste al numero maximo de'+ maximoIntentos+' intentos');
+            break;
+        }
+        //la condicion no s ecumplio
+        //alert('lo siento, no acertaste el número');
+
     }
     
 }
