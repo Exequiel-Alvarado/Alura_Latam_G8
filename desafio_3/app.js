@@ -29,6 +29,34 @@ while (contador>0){
 ----------------------------------------------------------------------------------
 */
 
+/*3.Crea un programa de cuenta regresiva. 
+Pide un número y cuenta desde 0 hasta ese número
+utilizando un bucle 'while' en la consola del navegador.
+
+let contador = parseInt(prompt('escriba un numero'));
+let numero =0
+
+while (numero<contador+1){
+    console.log('contado' + numero);
+    alert('este es el numero '+ numero +'');
+    numero = numero +1;
+}
+
+------------------------------------------------------------------
+
+*/
+
+
+
+let contador = parseInt(prompt('escriba un numero'));
+let numero =0
+
+while (numero<contador+1){
+    console.log('contado' + numero);
+    alert('este es el numero '+ numero +'');
+    numero = numero +1;
+}
+
 
 
 
