@@ -6,8 +6,10 @@ let intentos=1;
 //let palabraVeces = 'vez';
 let maximoIntentos =3;
 
+console.log(numeroSecreto);
+
 while (numeroUsuario != numeroSecreto){
-    numeroUsuario = prompt("Me indicas un numero  entre 1 y 10 por favor");
+    numeroUsuario = parseInt(prompt("Me indicas un numero  entre 1 y 10 por favor"));
 
     //alert('Hola Mundo');
 
