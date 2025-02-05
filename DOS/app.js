@@ -11,8 +11,9 @@ function asignarTextoElemento(elemento,texto){
 
 };
 
-function intentoDeUsuario(){
-    alert('click desde el boton');
+function verificarIntento(){
+    let numeroDeUsuario = document.getElementById('valorUsuario').value;
+    console.log(numeroDeUsuario);
     return;
 }
 
@@ -22,4 +23,4 @@ function generalNumeroSecreto(){
 };
 
 asignarTextoElemento('h1','juego del numero secreto');
-asignarTextoElemento('p','indicar un numero del 1 al 100');
+asignarTextoElemento('p','indicar un numero del 1 al 10');
