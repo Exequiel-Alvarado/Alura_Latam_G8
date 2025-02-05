@@ -1,5 +1,5 @@
 let numeroSecreto = generalNumeroSecreto();
-
+let intentos =1;
 
 
 
@@ -18,14 +18,16 @@ function verificarIntento(){
     //console.log (numeroSecreto);
     //console.log(numeroDeUsuario);
     //console.log(numeroDeUsuario === numeroSecreto);
+    //console.log(intentos);
     if (numeroDeUsuario === numeroSecreto){
-        asignarTextoElemento('p','Acertaste el número Secreto');
+        asignarTextoElemento('p',`Acertaste el número ${intentos} ${(intentos === 1)?'vez':'veces'}`);
     }else{
         if(numeroDeUsuario > numeroSecreto){
             asignarTextoElemento('p','el Numero Secreto es MENOR');
         }else{
             asignarTextoElemento('p','el Numero Secreto es MAYOR');
         }
+        intentos++;
     }
     return;
 }
