@@ -1,5 +1,5 @@
-let numeroSecreto = generalNumeroSecreto();
-let intentos =1;
+let numeroSecreto=0 ;
+let intentos=0 ;
 
 
 
@@ -46,5 +46,23 @@ function generalNumeroSecreto(){
    
 };
 
-asignarTextoElemento('h1','juego del numero secreto');
-asignarTextoElemento('p','indicar un numero del 1 al 10');
+function condicionesIniciales(){
+    asignarTextoElemento('h1','juego del numero secreto');
+    asignarTextoElemento('p','indicar un numero del 1 al 10');
+    numeroSecreto = generalNumeroSecreto();
+    intentos = 1;
+};
+
+function reiniciarJuego(){
+    //limpiar la caja
+    limpiarCaja();
+    //indicar mensaje de inicio de intervalos de nuemero
+    //generar el numero aleatorio
+    //iniciar numero de intentos
+    condicionesIniciales();
+    //desabilitar el boto de nuevo juego
+    document.querySelector('#reiniciar').setAttribute('disabled','true');
+
+};
+
+condicionesIniciales();
