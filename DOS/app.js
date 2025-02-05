@@ -22,15 +22,23 @@ function verificarIntento(){
     if (numeroDeUsuario === numeroSecreto){
         asignarTextoElemento('p',`Acertaste el número ${intentos} ${(intentos === 1)?'vez':'veces'}`);
     }else{
+        //el usuario no acerto
         if(numeroDeUsuario > numeroSecreto){
             asignarTextoElemento('p','el Numero Secreto es MENOR');
         }else{
             asignarTextoElemento('p','el Numero Secreto es MAYOR');
         }
         intentos++;
+        limpiarCaja();
     }
     return;
 }
+
+function limpiarCaja(){
+    let valorCaja = document.querySelector('#valorUsuario').value = '';
+
+};
+
 
 function generalNumeroSecreto(){
    return  Math.floor(Math.random()*10)+1;
