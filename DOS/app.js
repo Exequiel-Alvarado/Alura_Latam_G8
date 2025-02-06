@@ -1,5 +1,6 @@
 let numeroSecreto=0 ;
 let intentos=0 ;
+let listaNumerosSorteados = [];
 
 
 
@@ -36,14 +37,23 @@ function verificarIntento(){
 }
 
 function limpiarCaja(){
-    let valorCaja = document.querySelector('#valorUsuario').value = '';
+    document.querySelector('#valorUsuario').value = '';
 
 };
 
 
 function generalNumeroSecreto(){
-   return  Math.floor(Math.random()*10)+1;
-   
+   let numeroGenerado = Math.floor(Math.random()*10)+1;
+   // si el numero generado esta incluido en la lista hacemos la operacion sino hacemos la otra
+    if (listaNumerosSorteados.includes(numeroGenerado)){
+        return generalNumeroSecreto();
+
+    }else{
+        listaNumerosSorteados.push(numeroGenerado);
+        // usamos el push para empujar el ultimo numero generado
+        return numeroGenerado;
+    };
+
 };
 
 function condicionesIniciales(){
