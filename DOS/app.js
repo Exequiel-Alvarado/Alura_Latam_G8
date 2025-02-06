@@ -44,6 +44,8 @@ function limpiarCaja(){
 
 function generalNumeroSecreto(){
    let numeroGenerado = Math.floor(Math.random()*10)+1;
+   console.log(numeroGenerado);
+   console.log(listaNumerosSorteados);
    // si el numero generado esta incluido en la lista hacemos la operacion sino hacemos la otra
     if (listaNumerosSorteados.includes(numeroGenerado)){
         return generalNumeroSecreto();
