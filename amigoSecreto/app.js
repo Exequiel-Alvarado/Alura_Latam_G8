@@ -42,15 +42,15 @@ function mostrarAmigos(){
 }
 
 // funcion para soltear amigo secreto
-function sortearAmigoSecreto(){
-    if (amigoSecreto.length < 2 ){
+function sortearAmigo(){
+    if (guardarNombre.length < 2 ){
         alert('debes agregar al menos 2 amigos para realizar el sorteo.');
         return;
     };
 
     // crear un array para los amigos y sortar los nombres
     let resultado =[];
-    let amigosPendientes = [...amigoSecreto]; //copiar el array
+    let amigosPendientes = [...guardarNombre]; //copiar el array
 
     guardarNombre.forEach((amigo) =>{
         //elegir a amigo secreto
@@ -61,4 +61,19 @@ function sortearAmigoSecreto(){
         resultado.push(`${amigo} -> ${amigoSorteado}`);
     });
 
+    //mostrar resultado en pantalla
+    mostrarResultadosAmigo(resultado);
+
+}
+
+//funcion para mostrar resultado  del amigo secreto
+function mostrarResultadosAmigo(resultado){
+    let resultadoLista = document.getElementById('resultado');
+    resultadoLista.innerHTML = ''; // limpiar campo
+
+    resultado.forEach((item)=>{
+        let lista = document.createElement('lista');
+        lista.textContent = item;
+        resultadoLista.appendChild(lista);
+    });
 }
