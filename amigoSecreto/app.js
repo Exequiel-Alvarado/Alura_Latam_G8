@@ -19,7 +19,11 @@ function agregarAmigo(){
     guardarNombre.push(amigoSecreto);
     console.log(guardarNombre);
 
-   
+    //limpiar campos
+    ingresarAmigo.value = '';
+
+    //actualizar lista
+    mostrarAmigos();
 
 
 }
