@@ -6,7 +6,7 @@ let guardarNombre = [];
 //funcion para agregar amigos secreto a la lista
 function agregarAmigo(){
     
-    let ingresarAmigo =document.getElementById('amigo');
+    let ingresarAmigo =document.getElementById('inputUser');
     let amigoSecreto= ingresarAmigo.value.trim();
  
     //verificar campo vacios
@@ -36,7 +36,7 @@ function mostrarAmigos(){
 
     guardarNombre.forEach((amigo, index) => {
         let lista = document.createElement('lista');
-        lista.textContent = amigo;
+        lista.textContent = amigo+'\n';
         listaAmigos.appendChild(lista);
     });
 }
@@ -58,7 +58,7 @@ function sortearAmigo(){
         let amigoSorteado = amigosPendientes.splice(amigoAlzar,1)[0];// eliminar amigo elegido
 
         // mostrar resultado
-        resultado.push(`${amigo} -> ${amigoSorteado}`);
+        resultado.push(`${amigo} ---> ganador es : ${amigoSorteado}`);
     });
 
     //mostrar resultado en pantalla
@@ -75,5 +75,6 @@ function mostrarResultadosAmigo(resultado){
         let lista = document.createElement('lista');
         lista.textContent = item;
         resultadoLista.appendChild(lista);
+        return;
     });
 }
