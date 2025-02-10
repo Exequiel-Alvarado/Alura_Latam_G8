@@ -46,5 +46,19 @@ function sortearAmigoSecreto(){
     if (amigoSecreto.length < 2 ){
         alert('debes agregar al menos 2 amigos para realizar el sorteo.');
         return;
-    }
+    };
+
+    // crear un array para los amigos y sortar los nombres
+    let resultado =[];
+    let amigosPendientes = [...amigoSecreto]; //copiar el array
+
+    guardarNombre.forEach((amigo) =>{
+        //elegir a amigo secreto
+        let amigoAlzar = Math.floor(Math.random() * amigosPendientes.length);
+        let amigoSorteado = amigosPendientes.splice(amigoAlzar,1)[0];// eliminar amigo elegido
+
+        // mostrar resultado
+        resultado.push(`${amigo} -> ${amigoSorteado}`);
+    });
+
 }
