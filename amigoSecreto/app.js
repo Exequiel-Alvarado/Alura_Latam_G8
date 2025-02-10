@@ -33,4 +33,10 @@ function mostrarAmigos(){
     let listaAmigos = document.getElementById('listaAmigos');
     // limpiamos el campo
     listaAmigos.innerHTML = '';
+
+    guardarNombre.forEach((amigo, index) => {
+        let lista = document.createElement('lista');
+        lista.textContent = amigo;
+        listaAmigos.appendChild(lista);
+    });
 }
