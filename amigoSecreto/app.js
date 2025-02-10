@@ -28,3 +28,9 @@ function agregarAmigo(){
 
 }
 
+// funcion para mostrar los amigos
+function mostrarAmigos(){
+    let listaAmigos = document.getElementById('listaAmigos');
+    // limpiamos el campo
+    listaAmigos.innerHTML = '';
+}
