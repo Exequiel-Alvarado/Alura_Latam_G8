@@ -40,3 +40,11 @@ function mostrarAmigos(){
         listaAmigos.appendChild(lista);
     });
 }
+
+// funcion para soltear amigo secreto
+function sortearAmigoSecreto(){
+    if (amigoSecreto.length < 2 ){
+        alert('debes agregar al menos 2 amigos para realizar el sorteo.');
+        return;
+    }
+}
