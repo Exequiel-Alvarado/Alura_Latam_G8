@@ -15,7 +15,11 @@ function agregarAmigo(){
         return;
     }
 
-  
+    //ingresar amigos a la lista
+    guardarNombre.push(amigoSecreto);
+    console.log(guardarNombre);
+
+   
 
 
 }
