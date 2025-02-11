@@ -4,24 +4,24 @@ let amigos =[];
 //funvion para agregar amigos
 function agregarAmigo (){
     let inputAmigo = document.getElementById('amigo');
-    let nombreAmigo = inputAmigo.ariaValueMax.trim();
-
+    let nombreAmigo = inputAmigo.value.trim();
+    
     //validar campo
-    if (nombre === ""){
+    if (nombreAmigo === ""){
         alert("por favor, inserte un nombre");
         return;
     }
 
     //validarnombre no este duplicado
      if(amigos.includes(nombreAmigo)){
-        alert(`El nobre uaesta elegido ${nombreAmigo}  ya esta en la lista`); 
+        alert(`El nombre ya esta elegido ${nombreAmigo}  ya esta en la lista`); 
         return;
      }
      // agregar nombre de amigos
      amigos.push(nombreAmigo);
 
     // limpiar el campo
-    inputAmigo.ariaValue = "";
+    inputAmigo.Value = "";
 
     //actualizar la lista en pantalla
     actualizarLista ();
