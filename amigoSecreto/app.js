@@ -17,7 +17,15 @@ function agregarAmigo (){
         alert(`El nobre uaesta elegido ${nombreAmigo}  ya esta en la lista`); 
         return;
      }
+     // agregar nombre de amigos
+     amigos.push(nombreAmigo);
 
+    // limpiar el campo
+    inputAmigo.ariaValue = "";
+
+    //actualizar la lista en pantalla
+    actualizarLista ();
+    
 }
 
 //funcion para actualixar la listas de amigos
