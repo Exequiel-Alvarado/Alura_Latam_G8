@@ -75,3 +75,5 @@ function  sortearAmigo(){
     actualizarLista();
     
 }
+
+// por Exequiel Alvarado
